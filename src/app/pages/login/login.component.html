@@ -2,4 +2,27 @@
 title="Faça login em sua conta"
 primaryBtnText="Entrar"
 secondaryBtnText="Registrar-se"
-></app-default-login-layout>
+(submit)="submit()"
+(navigate)="navigate()"
+>
+<form [formGroup]="loginForm">
+  <app-primary-input
+  formControlName="email"
+  inputName="email"
+  type="email"
+  label="email"
+  placeHolder="afonso@hotmail.com"
+  >
+    <img src="../../../assets/svg/email-icon.svg" alt="icone do campo de email" >
+  </app-primary-input>
+  <app-primary-input
+  formControlName="password"
+  inputName="password"
+  type="password"
+  label="senha"
+  >
+    <img src="../../../assets/svg/password-icon.svg" alt="icone do campo de senha">
+  </app-primary-input>
+    <span>Esqueceu sua senha ?</span>
+</form>
+</app-default-login-layout>

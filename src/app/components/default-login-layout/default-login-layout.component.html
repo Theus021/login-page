@@ -2,14 +2,15 @@
     <section class="form-section">
         <img src="../../../assets/svg/logo.svg" alt="logo da empresa">
         <h2>{{title}}</h2>
+        <ng-content></ng-content>
         <div class="btn-wrapper">
-          <button class="btn-primary">{{primaryBtnText}}</button>
+          <button class="btn-primary" (click)="submit()">{{primaryBtnText}}</button>
           <div class="divider">
             <div></div>
               <span>or</span>
             <div></div>
           </div>
-          <button class="btn-secondary">{{secondaryBtnText}}</button>
+          <button class="btn-secondary" (click)="navigate()">{{secondaryBtnText}}</button>
         </div>
 
     </section>
