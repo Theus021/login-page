@@ -29,6 +29,7 @@ main {
 
         img{
           margin-bottom: 30px;
+
         }
 
         h2{
@@ -80,6 +81,9 @@ main {
           background-color: transparent;
           cursor: pointer;
 
+          &:disabled{
+            opacity: 0.8;
+          }
 
           &.btn-primary{
             background-color: $primary-color;
